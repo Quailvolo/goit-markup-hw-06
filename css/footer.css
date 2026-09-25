@@ -168,3 +168,18 @@
 .footer-subscribe-btn:focus {
   background-color: var(--ocean);
 }
+
+@media screen and (min-width: 1158px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-brand {
+    margin-right: 120px;
+  }
+
+  .footer-subscribe {
+    margin-left: auto;
+  }
+}

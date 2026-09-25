@@ -146,3 +146,9 @@
     letter-spacing: 0.02em;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .address-list {
+    padding-block: 0;
+  }
+}

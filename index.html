@@ -31,9 +31,7 @@
                 <a class="nav-link" href="/" title="Go to Studio">Studio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/" title="Go to Portfolio"
-                  >Portfolio</a
-                >
+                <a class="nav-link" href="/" title="Go to Portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/" title="Go to Contacts">Contacts</a>
@@ -155,6 +153,7 @@
               <div class="team-card">
                 <img
                   src="./images/team-3.jpg"
+                  srcset="./images/team-3-2x.jpg 2x"
                   width="264"
                   height="260"
                   alt="Photo of Mark Guerrero"
@@ -199,6 +198,7 @@
               <div class="team-card">
                 <img
                   src="./images/team-2.jpg"
+                  srcset="./images/team-2-2x.jpg 2x"
                   width="264"
                   height="260"
                   alt="Photo of Tom Ford"
@@ -243,6 +243,7 @@
               <div class="team-card">
                 <img
                   src="./images/team-1.jpg"
+                  srcset="./images/team-1-2x.jpg 2x"
                   width="264"
                   height="260"
                   alt="Photo of Camila Garcia"
@@ -287,6 +288,7 @@
               <div class="team-card">
                 <img
                   src="./images/team-0.jpg"
+                  srcset="./images/team-0-2x.jpg 2x"
                   width="264"
                   height="260"
                   alt="Photo of Daniel Wilson"
@@ -341,6 +343,7 @@
                 <div class="portfolio-card-thumb">
                   <img
                     src="./images/portfolio-5_tiny.jpg"
+                    srcset="./images/portfolio-5_tiny-2x.jpg 2x"
                     width="360"
                     height="300"
                     alt="Banking App"
@@ -364,6 +367,7 @@
                 <div class="portfolio-card-thumb">
                   <img
                     src="./images/portfolio-4_tiny.jpg"
+                    srcset="./images/portfolio-4_tiny-2x.jpg 2x"
                     width="360"
                     height="300"
                     alt="Cashless Payment"
@@ -387,6 +391,7 @@
                 <div class="portfolio-card-thumb">
                   <img
                     src="./images/portfolio-3_tiny.jpg"
+                    srcset="./images/portfolio-3_tiny-2x.jpg 2x"
                     width="360"
                     height="300"
                     alt="Meditation App"
@@ -410,6 +415,7 @@
                 <div class="portfolio-card-thumb">
                   <img
                     src="./images/portfolio-2_tiny.jpg"
+                    srcset="./images/portfolio-2_tiny-2x.jpg 2x"
                     width="360"
                     height="300"
                     alt="Taxi Service"
@@ -433,6 +439,7 @@
                 <div class="portfolio-card-thumb">
                   <img
                     src="./images/portfolio-1_tiny.jpg"
+                    srcset="./images/portfolio-1_tiny-2x.jpg 2x"
                     width="360"
                     height="300"
                     alt="Screen Illustrations"
@@ -456,6 +463,7 @@
                 <div class="portfolio-card-thumb">
                   <img
                     src="./images/portfolio-0_tiny.jpg"
+                    srcset="./images/portfolio-0_tiny-2x.jpg 2x"
                     width="360"
                     height="300"
                     alt="Online Courses"
@@ -479,73 +487,71 @@
       </section>
     </main>
 
-    <!-- FOOTER з id="footer" -->
+    <!-- FOOTER (Блоки є прямими дітьми контейнера без зайвого div.footer-content) -->
     <footer class="footer" id="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <a class="logo footer-logo" href="/" title="Go to main page">
-              <span>WEB</span>Studio
-            </a>
-            <p>
-              Increase the flow of customers and sales for your business with
-              digital marketing &amp; growth solutions.
-            </p>
-          </div>
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <a class="logo footer-logo" href="/" title="Go to main page">
+            <span>WEB</span>Studio
+          </a>
+          <p>
+            Increase the flow of customers and sales for your business with
+            digital marketing &amp; growth solutions.
+          </p>
+        </div>
 
-          <div class="footer-social">
-            <p class="footer-col-title">Social media</p>
-            <ul class="social-icons footer-social-icons">
-              <li>
-                <a href="#" aria-label="Instagram">
-                  <svg width="16" height="16">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Twitter">
-                  <svg width="16" height="16">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Facebook">
-                  <svg width="16" height="16">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="LinkedIn">
-                  <svg width="16" height="16">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-subscribe">
-            <p class="footer-col-title">Subscribe</p>
-            <form class="footer-subscribe-form" action="#" method="post">
-              <label for="subscribe-email" class="sr-only">E-mail</label>
-              <input
-                type="email"
-                id="subscribe-email"
-                name="subscribe-email"
-                class="footer-subscribe-input"
-                placeholder="E-mail"
-              />
-              <button type="submit" class="footer-subscribe-btn">
-                Subscribe
-                <svg width="24" height="24" aria-hidden="true">
-                  <use href="./images/icons.svg#icon-send"></use>
+        <div class="footer-social">
+          <p class="footer-col-title">Social media</p>
+          <ul class="social-icons footer-social-icons">
+            <li>
+              <a href="#" aria-label="Instagram">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
-              </button>
-            </form>
-          </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Twitter">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Facebook">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="LinkedIn">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <p class="footer-col-title">Subscribe</p>
+          <form class="footer-subscribe-form" action="#" method="post">
+            <label for="subscribe-email" class="sr-only">E-mail</label>
+            <input
+              type="email"
+              id="subscribe-email"
+              name="subscribe-email"
+              class="footer-subscribe-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-subscribe-btn">
+              Subscribe
+              <svg width="24" height="24" aria-hidden="true">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -638,11 +644,10 @@
       </div>
     </div>
 
-    <!-- МОДАЛЬНЕ ВІКНО -->
-    <div class="backdrop" id="modal-backdrop">
+    <!-- МОДАЛЬНЕ ВІКНО (id="modal" перенесено на бекдроп) -->
+    <div class="backdrop" id="modal">
       <div
         class="modal"
-        id="modal"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-title"
@@ -759,7 +764,7 @@
     <script>
       const openBtn = document.querySelector(".modal-open-btn");
       const closeBtn = document.getElementById("modal-close");
-      const backdrop = document.getElementById("modal-backdrop");
+      const backdrop = document.getElementById("modal"); // Шукаємо бекдроп за id="modal"
 
       openBtn.addEventListener("click", () => {
         backdrop.classList.add("is-open");
