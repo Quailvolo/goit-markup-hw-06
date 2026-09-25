@@ -145,3 +145,19 @@
 .mobile-social-icons a:focus {
   background-color: var(--ocean);
 }
+
+/* Додати приховування на планшетах та десктопах */
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+.mobile-phone-link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--iris);
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
