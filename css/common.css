@@ -184,8 +184,10 @@ address {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    /* Виправлено з 24px на 16px */
+    padding-right: 16px;
+    /* Виправлено з 24px на 16px */
   }
 }
 

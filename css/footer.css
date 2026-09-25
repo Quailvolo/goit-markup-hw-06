@@ -183,3 +183,99 @@
     margin-left: auto;
   }
 }
+
+.footer {
+  background-color: #2e2f42;
+  padding: 96px 0;
+}
+
+/* Мобільні стилі (колонка, центрування, gap 72px) */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+  /* Центрування всіх дочірніх блоків на мобільних */
+  text-align: center;
+}
+
+.footer-brand p {
+  text-align: left;
+  /* Текст бренду вирівняний по лівому краю, як вимагалося */
+}
+
+.footer-brand {
+  max-width: 264px;
+}
+
+.footer-col-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+/* Планшетні стилі (min-width: 768px) */
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    align-items: baseline;
+    justify-content: flex-start;
+    text-align: left;
+    max-width: 584px;
+    /* Обмеження ширини для двох блоків у ряду */
+  }
+
+  .footer-brand {
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .footer-brand p {
+    text-align: left;
+  }
+
+  .footer-social {
+    text-align: left;
+  }
+
+  .footer-subscribe {
+    text-align: left;
+  }
+}
+
+/* Десктопні стилі (min-width: 1158px) */
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 0;
+    max-width: 1158px;
+  }
+
+  .footer-brand {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+
+  .footer-social {
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+
+  .footer-subscribe {
+    margin-left: auto;
+    /* Притискаємо блок підписки праворуч без дублювання марджінів */
+    margin-bottom: 0;
+  }
+}
