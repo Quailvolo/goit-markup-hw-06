@@ -1,0 +1,173 @@
+/* ==========================================
+   CSS VARIABLES
+========================================== */
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --white: #ffffff;
+  --dairy: #fcfcfc;
+
+  --main-font-family: "Roboto";
+  --secondary-font-family: "Raleway";
+
+  /* SVG icon colors */
+  --color0: #f4f4fd;
+  --color1: #2e2f42;
+  --color2: #4d5ae5;
+}
+
+/* ==========================================
+   BASE RESET
+========================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font-family), sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--slate);
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* ==========================================
+   UTILITY
+========================================== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* B5: Mobile First — base container for mobile */
+.container {
+  width: 100%;
+  max-width: 320px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+/* B2: Breakpoint 768px */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-inline: 16px;
+  }
+}
+
+/* B2: Breakpoint 1158px */
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-inline: 15px;
+  }
+}
+
+.logo {
+  font-family: var(--secondary-font-family), sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  line-height: 1.333;
+  display: inline-block;
+  color: var(--navy-blue);
+}
+
+.logo span {
+  color: var(--iris);
+}
+
+.section {
+  padding-block: 96px;
+}
+
+@media (min-width: 1158px) {
+  .section {
+    padding-block: 120px;
+  }
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+  margin-block-end: 72px;
+}
+
+/* ==========================================
+   SOCIAL ICONS (shared)
+========================================== */
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+  background-color: var(--ocean);
+}

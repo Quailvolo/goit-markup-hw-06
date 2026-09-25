@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -38,9 +38,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/" title="Go to Contacts"
-                  >Contacts</a
-                >
+                <a class="nav-link" href="/" title="Go to Contacts">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -91,7 +89,13 @@
           id="mobile-menu-close"
           aria-label="Close mobile menu"
         >
-          <svg width="8" height="8" viewBox="0 0 8 8" fill="none" aria-hidden="true">
+          <svg
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+            aria-hidden="true"
+          >
             <path
               d="M0.5 0.5L7.5 7.5M7.5 0.5L0.5 7.5"
               stroke="currentColor"
@@ -200,8 +204,8 @@
               </div>
               <h3 class="benefits-title">Punctuality</h3>
               <p>
-                Bring the key message to the brand's audience for the best
-                price within the shortest possible time.
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
               </p>
             </li>
             <li class="benefits-item">
@@ -224,8 +228,8 @@
               </div>
               <h3 class="benefits-title">Technologies</h3>
               <p>
-                Design practice focused on digital experiences. We bring forth
-                a deep passion for problem-solving.
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
               </p>
             </li>
           </ul>
@@ -434,8 +438,8 @@
                   <div class="portfolio-card-overlay">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
-                      Manager App · Calorie Tracker App · Exotic Fruit
-                      Ecommerce App · Cloud Storage App
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
                     </p>
                   </div>
                 </div>
@@ -457,8 +461,8 @@
                   <div class="portfolio-card-overlay">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
-                      Manager App · Calorie Tracker App · Exotic Fruit
-                      Ecommerce App · Cloud Storage App
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
                     </p>
                   </div>
                 </div>
@@ -480,8 +484,8 @@
                   <div class="portfolio-card-overlay">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
-                      Manager App · Calorie Tracker App · Exotic Fruit
-                      Ecommerce App · Cloud Storage App
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
                     </p>
                   </div>
                 </div>
@@ -503,8 +507,8 @@
                   <div class="portfolio-card-overlay">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
-                      Manager App · Calorie Tracker App · Exotic Fruit
-                      Ecommerce App · Cloud Storage App
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
                     </p>
                   </div>
                 </div>
@@ -526,8 +530,8 @@
                   <div class="portfolio-card-overlay">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
-                      Manager App · Calorie Tracker App · Exotic Fruit
-                      Ecommerce App · Cloud Storage App
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
                     </p>
                   </div>
                 </div>
@@ -549,8 +553,8 @@
                   <div class="portfolio-card-overlay">
                     <p>
                       14 Stylish and User-Friendly App Design Concepts · Task
-                      Manager App · Calorie Tracker App · Exotic Fruit
-                      Ecommerce App · Cloud Storage App
+                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                      App · Cloud Storage App
                     </p>
                   </div>
                 </div>
@@ -616,7 +620,9 @@
           <div class="footer-subscribe">
             <p class="footer-col-title">Subscribe</p>
             <form class="footer-subscribe-form" action="#" method="post">
-              <label for="subscribe-email" class="visually-hidden">E-mail</label>
+              <label for="subscribe-email" class="visually-hidden"
+                >E-mail</label
+              >
               <input
                 type="email"
                 id="subscribe-email"
@@ -650,7 +656,13 @@
           id="modal-close"
           aria-label="Close modal"
         >
-          <svg width="8" height="8" viewBox="0 0 8 8" fill="none" aria-hidden="true">
+          <svg
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+            aria-hidden="true"
+          >
             <path
               d="M0.5 0.5L7.5 7.5M7.5 0.5L0.5 7.5"
               stroke="currentColor"
@@ -749,52 +761,52 @@
 
     <script>
       // Modal
-      const openBtn = document.querySelector('.modal-open-btn');
-      const closeBtn = document.getElementById('modal-close');
-      const backdrop = document.getElementById('modal-backdrop');
+      const openBtn = document.querySelector(".modal-open-btn");
+      const closeBtn = document.getElementById("modal-close");
+      const backdrop = document.getElementById("modal-backdrop");
 
-      openBtn.addEventListener('click', () => {
-        backdrop.classList.add('is-open');
-        document.body.style.overflow = 'hidden';
+      openBtn.addEventListener("click", () => {
+        backdrop.classList.add("is-open");
+        document.body.style.overflow = "hidden";
       });
 
-      closeBtn.addEventListener('click', () => {
-        backdrop.classList.remove('is-open');
-        document.body.style.overflow = '';
+      closeBtn.addEventListener("click", () => {
+        backdrop.classList.remove("is-open");
+        document.body.style.overflow = "";
       });
 
-      backdrop.addEventListener('click', e => {
+      backdrop.addEventListener("click", (e) => {
         if (e.target === backdrop) {
-          backdrop.classList.remove('is-open');
-          document.body.style.overflow = '';
+          backdrop.classList.remove("is-open");
+          document.body.style.overflow = "";
         }
       });
 
-      document.addEventListener('keydown', e => {
-        if (e.key === 'Escape') {
-          backdrop.classList.remove('is-open');
-          mobileMenu.classList.remove('is-open');
-          document.body.style.overflow = '';
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          backdrop.classList.remove("is-open");
+          mobileMenu.classList.remove("is-open");
+          document.body.style.overflow = "";
         }
       });
 
       // Mobile menu (C1-C6)
-      const burgerBtn = document.getElementById('burger-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const mobileMenuClose = document.getElementById('mobile-menu-close');
+      const burgerBtn = document.getElementById("burger-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileMenuClose = document.getElementById("mobile-menu-close");
 
-      burgerBtn.addEventListener('click', () => {
-        mobileMenu.classList.add('is-open');
-        mobileMenu.setAttribute('aria-hidden', 'false');
-        burgerBtn.setAttribute('aria-expanded', 'true');
-        document.body.style.overflow = 'hidden';
+      burgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("is-open");
+        mobileMenu.setAttribute("aria-hidden", "false");
+        burgerBtn.setAttribute("aria-expanded", "true");
+        document.body.style.overflow = "hidden";
       });
 
-      mobileMenuClose.addEventListener('click', () => {
-        mobileMenu.classList.remove('is-open');
-        mobileMenu.setAttribute('aria-hidden', 'true');
-        burgerBtn.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
+      mobileMenuClose.addEventListener("click", () => {
+        mobileMenu.classList.remove("is-open");
+        mobileMenu.setAttribute("aria-hidden", "true");
+        burgerBtn.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
       });
     </script>
   </body>

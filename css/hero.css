@@ -1,0 +1,104 @@
+/* ==========================================
+   HERO — Mobile First
+========================================== */
+.hero {
+  text-align: center;
+  background-color: var(--navy-blue);
+  padding-block: 72px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.webp);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-block: 112px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.webp);
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.webp);
+  }
+}
+
+@media (min-width: 1158px) {
+  .hero {
+    padding-block: 188px;
+    background-size: 1440px auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.webp);
+  }
+}
+
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.webp);
+  }
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  max-width: 216px;
+  margin-inline: auto;
+  margin-block-end: 72px;
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-block-end: 36px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .hero h1 {
+    margin-block-end: 48px;
+  }
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background-color: var(--iris);
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 169px;
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--ocean);
+}

@@ -1,0 +1,148 @@
+/* ==========================================
+   HEADER — Mobile First
+========================================== */
+.header {
+  border-bottom: 1px solid var(--cornflower);
+  background-color: var(--white);
+  box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08),
+    0 1px 1px rgba(46, 47, 66, 0.16),
+    0 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 16px;
+}
+
+/* Nav and address hidden on mobile */
+.header-nav {
+  display: none;
+}
+
+.header-address {
+  display: none;
+}
+
+/* Burger visible on mobile only */
+.burger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--navy-blue);
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.burger-btn:hover {
+  color: var(--ocean);
+}
+
+@media (min-width: 768px) {
+  .header-inner {
+    padding-block: 0;
+  }
+
+  /* Show nav and address on tablet+ */
+  .header-nav {
+    display: block;
+  }
+
+  .header-address {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* Hide burger on tablet+ */
+  .burger-btn {
+    display: none;
+  }
+
+  .header .logo {
+    margin-right: 120px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .header .logo {
+    margin-right: 76px;
+  }
+}
+
+/* Nav links */
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  display: block;
+  padding-block: 24px;
+  position: relative;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.nav-link:hover {
+  color: var(--ocean);
+}
+
+.nav-item.current .nav-link {
+  color: var(--ocean);
+}
+
+.nav-item.current .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--ocean);
+}
+
+/* Address */
+.address-list {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.address-link {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--slate);
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.address-link:hover {
+  color: var(--ocean);
+}
+
+/* B6: Tablet-only address styles (range query) */
+@media (min-width: 768px) and (max-width: 1157px) {
+  .address-list {
+    padding-block: 16px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .address-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}

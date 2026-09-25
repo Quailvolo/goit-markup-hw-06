@@ -1,0 +1,74 @@
+/* ==========================================
+   BENEFITS / FEATURES — Mobile First
+========================================== */
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+
+.benefits-item {
+  width: 100%;
+}
+
+.benefits-icon-box {
+  display: none;
+}
+
+.benefits-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  text-align: center;
+  margin-block-end: 8px;
+}
+
+.benefits-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 768px) {
+  .benefits-list {
+    gap: 72px 24px;
+  }
+
+  .benefits-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .benefits-title {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1158px) {
+  .benefits-list {
+    gap: 24px;
+  }
+
+  .benefits-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .benefits-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: var(--cloud);
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    margin-block-end: 8px;
+  }
+
+  .benefits-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+  }
+}
